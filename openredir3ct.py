@@ -16,13 +16,13 @@ def banner(ip):
 			for line in f.readlines():
 				payload = line.strip('\n')
 				r = requests.post(ip + payload)
-				print "\033[1;34m[?]" + r.url + "\033[1;m" + "\033[1;31m[-]No Redirection\033[1;m"
-			if r.status_code == 301 :
+				print "\033[1;34m[?]" + r.url + "\033[1;m"
+			if r.status_code == 200 :
 				return true
-	except Exception, e:
-		return str(e)
+	except:
+		return 
 		
-def main():
+def main():	
 	ip = sys.argv[1]
 	if banner(ip):
 		print "\033[1;32m[+] Redirection Successfull" 
