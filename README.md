@@ -5,7 +5,7 @@ Unvalidated redirects and forwards are possible when a web application accepts u
 for more details: https://www.owasp.org/index.php/Unvalidated_Redirects_and_Forwards_Cheat_Sheet
 
 ## Usage 
-### $python openredir3ct.py target wordlist.txt
+   $python openredir3ct.py target wordlist.txt
 
 ## Thanks
    OWASP 
