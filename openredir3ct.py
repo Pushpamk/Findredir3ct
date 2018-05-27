@@ -12,12 +12,12 @@ def banner(ip):
 			if not os.access(filename, os.R_OK):
 				print('[-] ' + filename + ' access denied.')
 				exit(0)
-			print '\033[1;33m[+] Reading Payloads From: ' + filename + '\033[1;m'
+			print('\033[1;33m[+] Reading Payloads From: ' + filename + '\033[1;m')
 			f = open(filename,'r')
 			for line in f.readlines():
 				payload = line.strip('\n')
 				r = requests.post(ip + payload)
-				print "\033[1;34m[?]" + r.url + "\033[1;m"
+				print("\033[1;34m[?]" + r.url + "\033[1;m")
 			if r.status_code == 200 :
 				return true
 	except:
