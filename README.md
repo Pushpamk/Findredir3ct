@@ -1,4 +1,4 @@
-# Findredir3ct [![python](https://img.shields.io/badge/Python-3.3-green.svg?style=style=flat-square)](https://www.python.org/downloads/) [![Build Status](https://travis-ci.org/Pushpamk/Findredir3ct.svg?branch=master)
+# Findredir3ct [![python](https://img.shields.io/badge/Python-3.3-green.svg?style=style=flat-square)](https://www.python.org/downloads/) ![Build Status](https://travis-ci.org/Pushpamk/Findredir3ct.svg?branch=master)
 
 ## This is Simple Open redirection vulnerability Finder 
 
