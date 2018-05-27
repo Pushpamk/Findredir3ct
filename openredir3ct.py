@@ -1,15 +1,16 @@
 import requests
 import os
 import sys
+from threading import Thread 
 
 def banner(ip):
 	try:
 			filename = sys.argv[2]
 			if not os.path.isfile(filename):
-				print '[-] ' + filename + ' does not exist.'
+				print('[-] ' + filename + ' does not exist.')
 				exit(0)
 			if not os.access(filename, os.R_OK):
-				print '[-] ' + filename + ' access denied.'
+				print('[-] ' + filename + ' access denied.')
 				exit(0)
 			print '\033[1;33m[+] Reading Payloads From: ' + filename + '\033[1;m'
 			f = open(filename,'r')
@@ -24,7 +25,8 @@ def banner(ip):
 		
 def main():	
 	ip = sys.argv[1]
-	if banner(ip):
-		print "\033[1;32m[+] Redirection Successfull" 
+	t = Thread(target = banner, args = (ip,))
+	if t.start():
+		print("\033[1;32m[+] Redirection Successfull")
 if __name__ == '__main__':
 	main()
