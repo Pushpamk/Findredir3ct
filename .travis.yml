@@ -12,4 +12,4 @@ python:
 install:
   pip install -r requirements.txt
 script:
-  python openredir3ct.py wordlist.txt
+  python openredir3ct.py -t https://198.162.0.1 -f wordlist.txt
