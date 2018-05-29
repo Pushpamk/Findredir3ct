@@ -10,9 +10,9 @@ for more details: https://www.owasp.org/index.php/Unvalidated_Redirects_and_Forw
    pip install -r requirements.txt
 
 ## Usage 
-   $python openredir3ct.py -t https;//targetsite 
-   or
-   $python openredir3ct.py -t https;//targetsite -f youryownpayload.txt
+$python openredir3ct.py -t https;//targetsite 
+or
+$python openredir3ct.py -t https;//targetsite -f youryownpayload.txt
 
 ## Thanks
    OWASP 
